@@ -117,8 +117,8 @@ class App extends Component {
           <h1>South Pacific</h1>   
           <div>
             {
-              this.state.pacific.map((car)=>{
-                return <Pacific pacificData={ car }/>
+              this.state.pacific.map((pacific, i)=>{
+                return <Pacific key={ `${i}-pacific`} pacificData={ pacific }/>
               })
             }
           </div>
