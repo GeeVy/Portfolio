@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
+import  Pacific  from './components/Pacific'
 
 class App extends Component {
 
@@ -11,7 +12,24 @@ class App extends Component {
     mainSubSectionHeading: "VALUKA Graeme",
     showAbout: false,
     showProjects: false,
-    showContacts: false
+    showContacts: false,
+    pacific: [
+      {
+        country: "Papua New Guinea",
+        capital: "Port Moresby",
+        population: "8606000"
+      },
+      {
+        country: "Fiji",
+        capital: "Suva",
+        population: "883483"
+      },
+      {
+        country: "Solomon Islands",
+        capital: "Honiara",
+        population: "652858"
+      }
+    ]
   }
 
   handleClickAbout = () => {
@@ -95,8 +113,15 @@ class App extends Component {
               :
               ""
             }
-          </div>   
-
+          </div>
+          <h1>South Pacific</h1>   
+          <div>
+            {
+              this.state.pacific.map((car)=>{
+                return <Pacific pacificData={ car }/>
+              })
+            }
+          </div>
         </main>
       </div>
     );
