@@ -5,6 +5,7 @@ import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import  Pacific  from './components/Pacific'
 
+
 class App extends Component {
 
   state = {
@@ -71,6 +72,8 @@ class App extends Component {
   render() {
     console.log("The page is rendering")
     return (
+    <div className="home-display">
+
       <div className="App">
         <header className="App-header">
           <h2 className="portfolio-title">VALUKA Graeme</h2>
@@ -124,6 +127,7 @@ class App extends Component {
           </div>
         </main>
       </div>
+    </div>
     );
 
   }

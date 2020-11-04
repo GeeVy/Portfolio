@@ -54,4 +54,15 @@ li:hover{
   background-color:#4ada2d;
   color:#fff
 }
-
+.home-display{
+  background-color: rgba(0, 255, 128, 0.267);
+}
+.Contact-section{
+  background-color: rgba(70, 131, 180, 0.432);
+}
+.Projects-section{
+  background-color: rgba(70, 131, 180, 0.432);
+}
+.about-section{
+  background-color: rgba(70, 131, 180, 0.432);
+}

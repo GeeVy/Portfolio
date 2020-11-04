@@ -7,7 +7,7 @@ const Projects = () => {
           <h3>Projects: </h3>
           <p>
               <ul>
-                  <li>< br/>- Adventure Story</li>
+                  <li>< br/> - Adventure Story Game</li>
                   <li>< br/> - HTML JS Calculator</li>
                   <li>< br/> - Simple CRUD App</li>
                   <li>< br/> - Basic Express API</li>
