@@ -4,7 +4,7 @@ import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import  Pacific  from './components/Pacific'
-
+import axios from 'axios'
 
 class App extends Component {
 
@@ -14,23 +14,25 @@ class App extends Component {
     showAbout: false,
     showProjects: false,
     showContacts: false,
-    pacific: [
-      {
-        country: "Papua New Guinea",
-        capital: "Port Moresby",
-        population: "8606000"
-      },
-      {
-        country: "Fiji",
-        capital: "Suva",
-        population: "883483"
-      },
-      {
-        country: "Solomon Islands",
-        capital: "Honiara",
-        population: "652858"
-      }
-    ]
+    pacific: []
+  }
+  getPacific = ()=>{
+    axios.get('http://localhost:8080/pacific')
+    .then(res=>{
+      console.log("axios for Pacific!")
+      console.log(res.data)
+      this.setState(()=>{
+        return {
+          pacific: res.data
+        }
+      })
+    })
+    .catch(err=>{
+      console.log(err)
+    })
+  }
+  componentDidMount(){
+    this.getPacific()
   }
 
   handleClickAbout = () => {

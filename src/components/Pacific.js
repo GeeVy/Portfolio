@@ -4,7 +4,7 @@ const Pacific = (props)=>{
         <div>
             <h2> { props.pacificData.country } </h2>
             <p> { "capital: "+ props.pacificData.capital } </p>
-            <p> { "poplation: " +props.pacificData.population } </p>
+            <p> { "population: " +props.pacificData.population } </p>
         </div>
     )
 }

@@ -56,6 +56,7 @@ li:hover{
 }
 .home-display{
   background-color: rgba(0, 255, 128, 0.267);
+  padding: 10px;
 }
 .Contact-section{
   background-color: rgba(70, 131, 180, 0.432);
